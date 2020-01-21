@@ -29,7 +29,6 @@ RUN apt-get -y install sqlite3 libsqlite3-dev \
     && npm install bufferutil \
     && npm install hammerandchisel/erlpack \
     && npm install sodium \
-    && npm install -g node-gyp \
     && npm install sqlite3 \
     && npm install better-sqlite3 \
     && npm install ffmpeg
