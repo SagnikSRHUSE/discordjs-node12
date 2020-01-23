@@ -26,8 +26,6 @@ RUN apt-get -y install sqlite3 libsqlite3-dev \
     && npm install discord.js \
     && npm install node-opus \
     && npm install @discordjs/uws \
-    && npm install bufferutil \
-    && npm install hammerandchisel/erlpack \
     && npm install sodium \
     && npm install sqlite3 \
     && npm install better-sqlite3 \
