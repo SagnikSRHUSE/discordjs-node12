@@ -28,7 +28,6 @@ RUN npm install discord.js \
     && npm install bufferutil \
     && npm install hammerandchisel/erlpack \
     && npm install sodium \
-    && npm install -g node-gyp \
     && npm install sqlite3 \
     && npm install better-sqlite3 \
     && npm install ffmpeg
