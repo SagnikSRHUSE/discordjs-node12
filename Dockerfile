@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:12-buster
 
 MAINTAINER Sagnik Sasmal, <sagnik@sagnik.me>
 
@@ -24,12 +24,12 @@ ENV LC_ALL en_US.UTF-8
 
 # Install NodeJS Dependencies
 RUN npm install discord.js \
-    && npm install node-opus \
+    && npm install opusscript \
     && npm install bufferutil \
-    && npm install hammerandchisel/erlpack \
-    && npm install sodium \
+    && npm install libsodium-wrappers \
     && npm install sqlite3 \
     && npm install better-sqlite3 \
+    && npm install utf-8-validate \
     && npm install ffmpeg
 
 USER container
