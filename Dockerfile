@@ -11,6 +11,7 @@ RUN apt-get update \
     && apt-get autoremove -y \
     && apt-get autoclean \
     && apt-get -y install dirmngr curl software-properties-common locales git cmake \
+    && apt-get -y install autoconf automake g++ libtool \
     && apt-get -y install ffmpeg libmp3lame-dev x264 \
     && apt-get -y install sqlite3 libsqlite3-dev \
     && adduser -D -h /home/container container
@@ -30,7 +31,8 @@ RUN npm install discord.js \
     && npm install sqlite3 \
     && npm install better-sqlite3 \
     && npm install utf-8-validate \
-    && npm install ffmpeg
+    && npm install ffmpeg \
+    && npm install sodium
 
 USER container
 ENV USER=container HOME=/home/container
