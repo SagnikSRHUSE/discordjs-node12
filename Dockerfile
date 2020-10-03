@@ -25,6 +25,7 @@ ENV LC_ALL en_US.UTF-8
 
 # Install NodeJS Dependencies
 RUN npm install discord.js \
+    && npm install @discordjs/opus \
     && npm install opusscript \
     && npm install bufferutil \
     && npm install libsodium-wrappers \
